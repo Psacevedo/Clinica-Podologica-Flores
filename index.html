@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clinica Podologica Flores | Podologia a domicilio</title>
+    <meta
+      name="description"
+      content="Clinica Podologica Flores ofrece atencion podologica profesional a domicilio en Calera de Tango, Pichilemu, Linares y Yerbas Buenas."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand logo-brand" href="index.html#inicio" aria-label="Clinica Podologica Flores">
+        <img src="assets/logo-flores.svg" alt="Podologia Clinica Integral Patricia Flores Soto" />
+      </a>
+
+      <button class="menu-button" type="button" aria-label="Abrir menu" data-menu-button>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" data-nav>
+        <a href="index.html#servicios">Servicios</a>
+        <a href="catalogo.html">Catalogo</a>
+        <a href="index.html#ubicacion">Cobertura</a>
+      </nav>
+
+      <a class="header-cta" href="#agenda">Agenda tu hora</a>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio">
+        <img class="hero-image" src="assets/hero-profesional.png" alt="Podologa clinica en consulta moderna y luminosa" />
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Clinica Podologica Flores</p>
+          <h1>Atencion podologica profesional directamente en tu domicilio</h1>
+          <p class="hero-copy">
+            Cuidado integral del pie con instrumental esterilizado, protocolos de bioseguridad y atencion personalizada para cada paciente.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#agenda">Agenda tu hora</a>
+            <a class="secondary-button" href="catalogo.html">Ver catalogo</a>
+          </div>
+        </div>
+
+        <aside class="appointment-panel" id="agenda" aria-label="Agenda">
+          <p class="panel-kicker">Contacto y reservas</p>
+          <h2>Agenda una evaluacion</h2>
+          <form class="booking-form">
+            <label>
+              Nombre
+              <input type="text" name="name" autocomplete="name" placeholder="Tu nombre" required />
+            </label>
+            <label>
+              Motivo
+              <select name="reason" required>
+                <option>Podologia clinica basica</option>
+                <option>Podologia para personas con diabetes</option>
+                <option>Tratamiento de onicomicosis</option>
+                <option>Uñas encarnadas</option>
+                <option>Plan familiar</option>
+              </select>
+            </label>
+            <label>
+              Comuna
+              <select name="area" required>
+                <option>Calera de Tango</option>
+                <option>Pichilemu</option>
+                <option>Linares</option>
+                <option>Yerbas Buenas</option>
+              </select>
+            </label>
+            <label>
+              Horario preferido
+              <input type="text" name="time" placeholder="Ej: martes en la mañana" />
+            </label>
+            <label>
+              Contacto
+              <input type="tel" name="phone" autocomplete="tel" placeholder="+56 9 1234 5678" required />
+            </label>
+            <button type="submit">Enviar por WhatsApp</button>
+          </form>
+          <a class="direct-phone" href="tel:+56966091431">Llamar al +56 9 6609 1431</a>
+        </aside>
+      </section>
+
+      <section class="trust-strip" aria-label="Indicadores de confianza">
+        <div>
+          <strong>4 zonas</strong>
+          <span>Calera de Tango, Pichilemu, Linares y Yerbas Buenas</span>
+        </div>
+        <div>
+          <strong>MINSAL</strong>
+          <span>Instrumental esterilizado bajo normativa</span>
+        </div>
+        <div>
+          <strong>09:30</strong>
+          <span>Atencion de lunes a sabado hasta las 17:00</span>
+        </div>
+      </section>
+
+      <section class="section services-section" id="servicios">
+        <div class="section-heading">
+          <p class="eyebrow">Servicios principales</p>
+          <h2>Tratamientos clinicos, preventivos y familiares</h2>
+          <p>
+            Cada atencion se realiza en domicilio e incluye valoracion, asepsia, tratamiento podologico, educacion e indicaciones posteriores.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <span class="service-number">01</span>
+            <h3>Podologia basica o preventiva</h3>
+            <p>Valoracion, limpieza de surcos, corte de uñas, remocion de durezas, pulido, hidratacion e indicaciones.</p>
+          </article>
+          <article class="service-card">
+            <span class="service-number">02</span>
+            <h3>Personas con diabetes</h3>
+            <p>Evaluacion de sensibilidad, control preventivo y cuidado clinico con foco en seguridad y seguimiento.</p>
+          </article>
+          <article class="service-card">
+            <span class="service-number">03</span>
+            <h3>Onicomicosis</h3>
+            <p>Desbastado, limpieza de uñas afectadas, aplicacion de tratamiento antifungico y apoyo medico cuando corresponde.</p>
+          </article>
+          <article class="service-card">
+            <span class="service-number">04</span>
+            <h3>Onicocriptosis</h3>
+            <p>Manejo de una encarnada, retiro de espicula, curacion avanzada y educacion posterior.</p>
+          </article>
+          <article class="service-card">
+            <span class="service-number">05</span>
+            <h3>Reflexologia podal</h3>
+            <p>Servicio combinado de podologia clinica y sesion de reflexologia de 40 minutos con musica de relajacion.</p>
+          </article>
+          <article class="service-card">
+            <span class="service-number">06</span>
+            <h3>Plan familiar</h3>
+            <p>Valores preferenciales para 2 a 5 familiares atendidos el mismo dia.</p>
+          </article>
+        </div>
+        <div class="section-action">
+          <a class="primary-button" href="catalogo.html">Ver catalogo completo y valores</a>
+        </div>
+      </section>
+
+      <section class="care-gallery section" id="bioseguridad">
+        <div class="section-heading">
+          <p class="eyebrow">Cuidado seguro</p>
+          <h2>Instrumental esterilizado y atencion limpia en domicilio</h2>
+          <p>
+            La atencion se prepara con material clinico de calidad, protocolos de bioseguridad y una experiencia tranquila para el paciente.
+          </p>
+        </div>
+        <div class="gallery-grid">
+          <figure class="gallery-card gallery-card-large">
+            <img src="assets/instrumental-podologia.png" alt="Instrumental podologico esterilizado preparado para atencion domiciliaria" />
+            <figcaption>
+              <strong>Instrumental esterilizado</strong>
+              <span>Preparacion ordenada antes de cada atencion.</span>
+            </figcaption>
+          </figure>
+          <figure class="gallery-card">
+            <img src="assets/atencion-sin-rostro.png" alt="Atencion podologica profesional sin rostro visible" />
+            <figcaption>
+              <strong>Atencion sin exposicion innecesaria</strong>
+              <span>Procedimiento limpio, comodo y enfocado en el cuidado.</span>
+            </figcaption>
+          </figure>
+          <figure class="gallery-card">
+            <img src="assets/kit-podologico.png" alt="Kit podologico limpio con guantes, bandeja e insumos clinicos" />
+            <figcaption>
+              <strong>Kit domiciliario</strong>
+              <span>Insumos limpios y listos para atencion profesional.</span>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="professional-section section" id="profesional">
+        <div class="profile-card">
+          <img class="profile-image" src="assets/atencion-sin-rostro.png" alt="Atencion podologica profesional con instrumental limpio" />
+          <div>
+            <p class="eyebrow">Profesional</p>
+            <h2>Atencion cercana, segura y personalizada</h2>
+            <p>
+              Clinica Podologica Flores brinda atencion integral en la comodidad del hogar, con altos estandares de higiene y continuidad del cuidado.
+            </p>
+          </div>
+        </div>
+        <div class="quote-panel">
+          <img src="assets/instrumental-podologia.png" alt="Instrumental podologico preparado para atencion segura" />
+          <p>
+            "Cuidamos tus pies con tecnica, bioseguridad y una atencion pensada para tu rutina familiar."
+          </p>
+        </div>
+      </section>
+
+      <section class="location-section" id="ubicacion">
+        <div class="location-copy">
+          <p class="eyebrow">Cobertura</p>
+          <h2>Atencion profesional directamente en su domicilio</h2>
+          <p>Reserva disponible para Calera de Tango, Pichilemu, Linares y Yerbas Buenas. Domingos con horario a convenir.</p>
+          <div class="contact-list">
+            <a href="tel:+56966091431">+56 9 6609 1431</a>
+            <span>Lunes a sabado, 09:30 a 17:00 horas</span>
+            <span>Calera de Tango, Pichilemu, Linares y Yerbas Buenas</span>
+          </div>
+        </div>
+        <div class="map-card">
+          <img src="assets/cobertura-domicilio.png" alt="Kit podologico para atencion domiciliaria" />
+          <div class="map-card-caption">
+            <span>Cobertura</span>
+            <strong>4 comunas</strong>
+            <p>Atencion con reserva previa en domicilio</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <img class="footer-logo" src="assets/logo-flores.svg" alt="Podologia Clinica Integral Patricia Flores Soto" />
+      <a href="tel:+56966091431">+56 9 6609 1431</a>
+    </footer>
+
+    <script src="script.js?v=2"></script>
+  </body>
+</html>
