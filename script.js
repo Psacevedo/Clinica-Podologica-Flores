@@ -36,13 +36,13 @@ bookingForm?.addEventListener("submit", (event) => {
   const phone = formData.get("phone")?.toString().trim();
   const clinicPhone = "56966091431";
   const message = [
-    "Hola, quiero agendar una atencion podologica a domicilio.",
+    "Hola, quiero agendar una atención podológica a domicilio.",
     "",
     `Nombre: ${name}`,
     `Motivo: ${reason}`,
     `Comuna: ${area}`,
     `Horario preferido: ${time || "A convenir"}`,
-    `Telefono de contacto: ${phone}`,
+    `Teléfono de contacto: ${phone}`,
   ].join("\n");
   const whatsappUrl = `https://wa.me/${clinicPhone}?text=${encodeURIComponent(message)}`;
 
