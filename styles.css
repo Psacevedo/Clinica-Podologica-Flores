@@ -71,8 +71,8 @@ select {
 }
 
 .logo-brand img {
-  width: min(430px, 50vw);
-  height: 66px;
+  width: 92px;
+  height: 82px;
   object-fit: contain;
   object-position: left center;
 }
@@ -614,7 +614,7 @@ h3 {
 }
 
 .footer-logo {
-  width: min(360px, 72vw);
+  width: min(160px, 42vw);
   height: auto;
   padding: 8px 12px;
   border-radius: 8px;
@@ -1042,8 +1042,8 @@ h3 {
   }
 
   .logo-brand img {
-    width: min(390px, calc(100vw - 104px));
-    height: 62px;
+    width: 72px;
+    height: 64px;
   }
 
   .hero {
