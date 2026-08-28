@@ -353,6 +353,98 @@ h3 {
   line-height: 1.35;
 }
 
+.local-links-section {
+  padding-top: 58px;
+  padding-bottom: 24px;
+}
+
+.local-links-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  margin-top: 24px;
+}
+
+.local-links-grid a {
+  display: flex;
+  min-height: 76px;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
+  border: 1px solid rgba(120, 101, 70, 0.18);
+  border-radius: 8px;
+  background: #fffdf8;
+  color: var(--ink);
+  font-weight: 800;
+  text-align: center;
+  box-shadow: 0 14px 34px rgba(65, 51, 34, 0.08);
+}
+
+.local-links-grid a:hover {
+  color: var(--sage-dark);
+  transform: translateY(-2px);
+}
+
+.local-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.9fr);
+  gap: 36px;
+  align-items: center;
+  padding: 140px max(24px, calc((100vw - 1160px) / 2)) 72px;
+  background: linear-gradient(135deg, #fffdf8 0%, #f1eadc 100%);
+}
+
+.local-hero h1 {
+  margin: 10px 0 18px;
+  font-family: "Newsreader", Georgia, serif;
+  font-size: clamp(2.4rem, 4vw, 4.9rem);
+  line-height: 0.95;
+  color: var(--ink);
+}
+
+.local-hero p {
+  max-width: 680px;
+  color: var(--muted);
+  font-size: 1.08rem;
+  line-height: 1.75;
+}
+
+.local-hero img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 22px 50px rgba(37, 32, 22, 0.16);
+}
+
+.local-content {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 320px;
+  gap: 32px;
+}
+
+.local-content article,
+.local-content aside {
+  background: #fffdf8;
+  border: 1px solid rgba(120, 101, 70, 0.16);
+  border-radius: 8px;
+  padding: 28px;
+}
+
+.local-content h2 {
+  margin-top: 0;
+  font-family: "Newsreader", Georgia, serif;
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+}
+
+.local-content p,
+.local-content li {
+  color: var(--muted);
+  line-height: 1.75;
+}
+
+.local-content ul {
+  padding-left: 20px;
+}
+
 .section,
 .location-section {
   padding: 96px max(24px, calc((100vw - 1160px) / 2));
@@ -983,8 +1075,14 @@ h3 {
   .catalog-hero,
   .catalog-layout,
   .about-hero,
-  .about-story {
+  .about-story,
+  .local-hero,
+  .local-content {
     grid-template-columns: 1fr;
+  }
+
+  .local-links-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .catalog-hero {
@@ -1072,8 +1170,17 @@ h3 {
 
   .section,
   .location-section,
-  .catalog-layout {
+  .catalog-layout,
+  .local-content {
     padding: 64px 16px;
+  }
+
+  .local-hero {
+    padding: 128px 16px 56px;
+  }
+
+  .local-links-grid {
+    grid-template-columns: 1fr;
   }
 
   .trust-strip {

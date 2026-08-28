@@ -12,6 +12,22 @@
       "dest": "/catalogo.html"
     },
     {
+      "src": "/podologia-a-domicilio-calera-de-tango",
+      "dest": "/podologia-a-domicilio-calera-de-tango.html"
+    },
+    {
+      "src": "/podologia-a-domicilio-pichilemu",
+      "dest": "/podologia-a-domicilio-pichilemu.html"
+    },
+    {
+      "src": "/podologia-a-domicilio-linares",
+      "dest": "/podologia-a-domicilio-linares.html"
+    },
+    {
+      "src": "/podologia-a-domicilio-yerbas-buenas",
+      "dest": "/podologia-a-domicilio-yerbas-buenas.html"
+    },
+    {
       "src": "/(.*)",
       "dest": "/$1"
     }
