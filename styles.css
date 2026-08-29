@@ -150,6 +150,23 @@ select {
   padding: 0 20px;
 }
 
+.link-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  width: fit-content;
+  border-bottom: 1px solid var(--sage-dark);
+  padding-bottom: 2px;
+  color: var(--sage-dark);
+  font-weight: 700;
+  font-size: 0.98rem;
+}
+
+.link-button:hover {
+  color: var(--ink);
+  border-color: var(--ink);
+}
+
 .hero-content .secondary-button {
   border-color: rgba(86, 108, 95, 0.32);
   color: var(--sage-dark);
@@ -527,7 +544,9 @@ h3 {
   grid-row: span 2;
 }
 
-.gallery-card img {
+.gallery-card img,
+.gallery-card video {
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -1046,9 +1065,14 @@ h3 {
   }
 
   .hero-content .secondary-button {
-    border-color: rgba(255, 253, 248, 0.72);
+    border: 0;
+    border-bottom: 1px solid rgba(255, 253, 248, 0.72);
+    border-radius: 0;
+    padding: 0;
     color: var(--white);
     background: transparent;
+    width: fit-content;
+    margin: 0 auto;
   }
 
   .hero-copy {
@@ -1168,6 +1192,11 @@ h3 {
     width: 100%;
   }
 
+  .hero-content .secondary-button {
+    width: fit-content;
+    margin: 12px auto 0;
+  }
+
   .section,
   .location-section,
   .catalog-layout,
@@ -1191,22 +1220,41 @@ h3 {
   }
 
   .trust-strip div {
-    min-height: 118px;
-    border-radius: 8px;
+    min-height: 84px;
+    padding: 16px 22px;
+    border-radius: 999px;
     scroll-snap-align: start;
   }
 
+  .trust-strip strong {
+    font-size: 1.3rem;
+  }
+
+  .trust-strip span {
+    font-size: 0.78rem;
+  }
+
   .services-grid {
-    gap: 12px;
+    display: flex;
+    grid-template-columns: none;
+    gap: 14px;
     border: 0;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 4px;
+    margin: 0 -16px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 
   .service-card {
+    flex: 0 0 78%;
     min-height: auto;
     padding: 20px;
     border: 1px solid var(--stone);
     border-radius: 8px;
     background: var(--white);
+    scroll-snap-align: start;
   }
 
   .service-number {

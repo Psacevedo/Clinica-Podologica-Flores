@@ -13,6 +13,12 @@ const resetInitialHash = () => {
 
 window.addEventListener("load", resetInitialHash);
 
+if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+  document.querySelectorAll(".hero-image, .gallery-card video").forEach((video) => {
+    if (video.tagName === "VIDEO") video.pause();
+  });
+}
+
 menuButton?.addEventListener("click", () => {
   nav.classList.toggle("is-open");
 });
